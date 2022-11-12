@@ -59,7 +59,7 @@ public class PhoneBookTest {
         phoneBook.add(name1, number1);
         phoneBook.add(name2, number2);
         phoneBook.add(name3, number3);
-        List<String> expected = List.of(name2, name1, name3);
+        List<String> expected = List.of(name2, name3, name1);
         assertThat(phoneBook.printAllNames()).isEqualTo(expected);
     }
 

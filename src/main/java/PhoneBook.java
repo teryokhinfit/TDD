@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
@@ -24,7 +25,7 @@ public class PhoneBook {
     }
 
     public List<String> printAllNames() {
-        return null;
+        return new ArrayList<>(cont.keySet());
     }
 
 }
