@@ -19,7 +19,7 @@ public class PhoneBook {
     }
 
     public String findByName(String name) {
-        return null;
+        return cont.get(name) == null ? "Контакт не найден" : cont.get(name);
     }
 
 
