@@ -24,5 +24,13 @@ public class PhoneBookTest {
         assertThat(phoneBook.add(name, number)).isTrue();
     }
 
+    @Test
+    public void findByNumber() {
+        PhoneBook phoneBook = new PhoneBook();
+        String name = "Vasya";
+        String number = "+7 912 345 67 89";
+        assertThat(phoneBook.findByNumber(number)).isEqualTo(name);
+    }
+
 
 }
