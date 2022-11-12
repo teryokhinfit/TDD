@@ -9,7 +9,14 @@ public class PhoneBook {
     }
 
     public String findByNumber(String number) {
-        return null;
+        String name = "Такого номера нет в списке ваших контактов";
+        for (Map.Entry<String, String> entry : cont.entrySet()) {
+            if (entry.getValue().equals(number)) {
+                name = entry.getKey();
+            }
+        }
+        return name;
     }
+
 
 }
